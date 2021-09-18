@@ -1,0 +1,234 @@
+void main() {
+  // Qno1
+  // Three types of operators
+  //1)Arithmetic    2)Equality and Relational Operator  3)Logical Operator
+  
+  // 1) Arithmetic
+  var a=10;
+  var b=5;
+  
+  num add =a+b;
+  int sub=a-b;
+  var mul=a*b;
+  num div=a/b;
+  num mod=a%b;
+  num inc=++a;
+  num dec=--b;
+  
+  print("${add}\n${sub}\n${mul}\n${div}\n${mod}\n${inc}\n${dec}");
+  
+  //2)Equality and Relational Operator
+  var greater = a>b;
+  var less = b<a;
+  var grequal = a>=b;
+  var lessequal= a<=b;
+  var equal = a==b;
+  var not = a!=b;
+  print("${greater}\n${less}\n${grequal}\n${lessequal}\n${equal}\n${not}");
+  
+  //3)Logical Operator
+  var c=20;
+  var d=30;
+  var and = (a>b) && (c>d);
+  var or= a>b || c>d;
+  var no= !(a>b);
+  print("${and}\n${or}\n${no}");
+}
+
+						Question no 2
+void main(){
+  var a=2;
+  var b=1;
+  var result= --a - --b + ++b + b--;
+  print(result);
+  var c = --a;
+  print(c);
+  
+  var d= --a - --b;
+  print(d);
+  
+  var e= --a - --b + ++b;
+  print(e);
+  
+  var f= --a - --b + ++b + b--;
+  print(f);
+}
+  
+						Question no 3
+void main(){
+  
+  num movie_ticket = 600;
+  
+  num calc5_ticket = movie_ticket*5;
+  print("Price of 5 movie ticket is= ${calc5_ticket} PKR");
+  
+}
+
+						Question no 4
+
+void main(){
+  
+List<int> first = [1,2,3,4,5,6,7];
+List<int> second = [3,5,6,7,9,10];
+List<int> difference = first.toSet().difference(second.toSet()).toList();
+print(difference.toString());
+}
+
+						Question no 5
+
+void main(){
+  
+ int a = 5;
+ int b = 7;
+ 
+    // ? operator
+    var c = (a <10) ? "Condition is Correct." : "Condition is Wrong.";
+    print(c);
+
+  
+  // ?? operator
+  var d = null; 
+  var e = 12; 
+   var res = d ?? e; 
+   print(res);
+
+}
+
+						Question no 6
+
+void main(){
+  // Dart Datatypes
+  var name;
+  String my_name;
+  int num1;
+  double num2;
+  num number;
+  List<dynamic> list1=[];
+  map(String,int) map1={};
+  
+}
+
+						Question no 7
+
+void main(){
+  List<int> list1=[7,14,21,28,35,42,49,56,63,70];
+  List<int> list2=[1,2,3,4,5,6,7,8,9,10];
+  var table =Map.fromIterables(list2,list1);
+  print("${table}");
+}
+
+						Question no 8
+
+import 'dart:io';
+void main(){
+  var JS= "Flutter";
+  
+  print("Enter Your Password!");
+  String name = stdin.readLineSync();
+  
+  if(JS==""){
+    print("Please Enter Your Password");
+  }
+  else if(JS==name)
+  {
+    print("Correct!The Passwword Your's");
+  }
+  else if(JS==name)
+  {
+    print("Correct!The Passwword Your's");
+  }
+  
+  else{
+    print("Incorrect Password");
+  }
+  
+  
+  
+}
+
+						Question no 9
+
+void main(){
+  List<String> std_name=["Daniyal","Haris","Hanzala"];
+  List<int>    std_score=[400,350,300];
+  var obtain = Map.fromIterables(std_name,std_score);
+  var total_marks= 500;
+  print(obtain);
+  
+  print("\nDaniyal,\n Your obtained marks are ${std_score[0]}");
+  
+  var percentage = (std_score[0]/total_marks)*100;
+  print("and Your percentage is = ${percentage}");
+  
+   print("\nHaris,\n Your obtained marks are ${std_score[1]}");
+  
+  var percentage1 = (std_score[1]/total_marks)*100;
+  print("and Your percentage is = ${percentage1}");
+  
+   print("\nHanzala,\n Your obtained marks are ${std_score[2]}");
+  
+  var percentage2 = (std_score[2]/total_marks)*100;
+  print("and Your percentage is = ${percentage2}");
+  
+   
+}
+
+						Question no 10
+
+void main(){
+  // Legal variable 
+  var name;
+  var my_name;
+  var $name;
+  var _name;
+  var name1;
+  
+  // Illegal variable
+  var 1name;
+  var +name;
+  var ^name;
+  var name&;
+  var @name;
+}	
+
+						Question no 11
+
+void main(){
+  var city= "Hyderabad";
+  var new_city = city.replaceRange(0,5,"Islam");
+  print(new_city);
+  
+}
+
+						Question no 12
+
+void main(){
+  print("\t\tElectricity Bill");
+  var customer_name = "Daniyal Iftikhar";
+  var current_month = "September";
+  var number_of_units = 800.55;
+  var charges_per_unit = 7.25;
+  print("\nCustomer Name: ${customer_name}\nMonth: ${current_month}");
+  print("\nYour No. of units this month is: ${number_of_units} ");
+  print("Charges per unit is: ${charges_per_unit}");
+  
+  var net_amount_payable = number_of_units * charges_per_unit;
+  print("\nYour current bill is within due date: " + net_amount_payable.toStringAsFixed(2));
+  
+  var late_payment_surcharge = 325.54;
+  var gross_amount_payable =   net_amount_payable + late_payment_surcharge;
+  print("Your gross_amount_payable after due date: "+ gross_amount_payable.toStringAsFixed(2));
+  
+}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
